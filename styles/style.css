@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(194, 194, 194),#000000);
+}
+
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature{
+    position: absolute;
+    color: #fff;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+
+#first {
+    top: 450px;
+    right: 50px;
+    transition: 1s;
+}
+#second{
+    top: -100px;
+    left: 200px;    
+    transform: rotate(-90deg);
+    color:transparent;
+    transition: 1s;
+}
+#third{
+    bottom:340px;
+    left: -260px;
+    transform: rotate(-180deg);
+    color:transparent;
+    transition: 1s;
+}
+#fourth{
+    bottom: 10px;
+    right: 270px;
+    transform: rotate(-270deg);
+    color:transparent;
+    transition: 1s;
+}
+.me{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 3px);
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+    text-align: center;
+}
+#upBtn{
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+#downBtn{
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+h3{
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+span{
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    margin:5px 0;
+}
