@@ -1,14 +1,14 @@
 body{
+    width: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     color: #fff;
-}
-.main{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
     background: linear-gradient(to right, rgb(139, 139, 139),#000000);
 }
+
+    /*background: linear-gradient(to right, rgb(139, 139, 139),#000000);*/
+
 
 nav{
     display: none;
@@ -18,7 +18,6 @@ nav{
     position: absolute;
     width: 100px;
     top: 10px;
-    left:20px;
     border-radius: 0;
     z-index: 1;
     border-radius: 50%;
@@ -26,18 +25,63 @@ nav{
 }
 
 #circle{
-    margin-left: 20px;
-    margin-top: 200px;
+    width: 800px;
+    height: 800px;
+    /*background: red;*/
+    position: absolute;
+    top: -20%;
+    transform: translateY(-50%);
+    transform: rotate(0deg);
+    transition: 1s;
+    
 }
 #first{
-    margin-top: 20px;
+    position: absolute;
+    bottom: 25%;
+    right:50%;
+    transform: translateX(-50%);
+    transition: 1s;
 }
-#circle h3{
-    font-size: 20px;
+#second{
+    position: absolute;
+    bottom: 15%;
+    right:20%;
+    transform: rotate(-90deg);
+    color:transparent;
+    transition: 1s;
 }
-#circle p{
-    font-size: 18px;
+#third{
+    position: absolute;
+    top:30%;
+    right: 5%;
+    transform: rotate(-180deg);
+    color:transparent;
+    transition: 1s;
 }
+#fourth{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: rotate(-270deg);
+    color:transparent;
+    transition: 1s;
+}
+
 .controls{
+    position:absolute;
+    width: 100%;
+}
+.controls h3{
     display: none;
+}
+#upBtn{
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 25vh;
+}
+#downBtn{
+    position: absolute;
+    top: 25vh;
+    right: 0%;
+    transform: rotate(-90deg);
 }

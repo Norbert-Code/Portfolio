@@ -63,8 +63,7 @@ nav{
     height: 1000px;
     position: absolute;
     top: 0;
-    left: -10%;
-    border-radius: 50%;
+    left: -10%;   
     transform: rotate(0deg);
     transition: 1s;
 }
